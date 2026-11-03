@@ -1,0 +1,81 @@
+/* ==========================================================================
+   Estilos Personalizados - Violeta Claro / Lavanda (Sem Gradientes)
+   ========================================================================== */
+
+:root {
+  --violet-main: #a78bfa;     /* Violeta claro principal para botões */
+  --violet-hover: #8b5cf6;    /* Tom ligeiramente mais escuro para o hover */
+  --violet-dark: #7c3aed;     /* Tom de violeta legível para textos e ícones */
+  --violet-soft: #f5f3ff;     /* Fundo violeta pastel muito suave */
+  --violet-border: #ddd6fe;   /* Borda delicada em lavanda */
+}
+
+/* Scroll Suave e Margem para o Menu Fixo */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 60px;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  color: #334155;
+  background-color: #ffffff;
+}
+
+/* Cores e Fundos */
+.bg-violet-soft { background-color: var(--violet-soft) !important; }
+.text-violet-brand { color: var(--violet-dark) !important; }
+.border-violet { border-color: var(--violet-main) !important; }
+
+/* Secção Hero */
+.hero-section {
+  min-height: 75vh;
+  padding-top: 80px;
+}
+
+.profile-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Botões Customizados em Violeta Claro */
+.btn-violet {
+  background-color: var(--violet-main);
+  color: #ffffff;
+  border: none;
+}
+
+.btn-violet:hover {
+  background-color: var(--violet-hover);
+  color: #ffffff;
+}
+
+.btn-outline-violet {
+  border: 1px solid var(--violet-main);
+  color: var(--violet-dark);
+  background-color: transparent;
+}
+
+.btn-outline-violet:hover {
+  background-color: var(--violet-main);
+  color: #ffffff;
+}
+
+/* Badges / Etiquetas */
+.badge-violet {
+  background-color: var(--violet-border);
+  color: #5b21b6;
+}
+
+/* Imagens dos Cards de Projetos */
+.card-img-top {
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Foco em Elementos de Formulário */
+.form-control:focus {
+  border-color: var(--violet-main);
+  box-shadow: 0 0 0 0.2rem rgba(167, 139, 250, 0.25);
+}
