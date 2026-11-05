@@ -8,14 +8,13 @@ body {
 }
 
 /* Títulos */
-h1
+h1 {
   color: #4a4a4a;                    /* Texto em cinza escuro */
   padding: 8px;
   border-radius: 10px;
   text-align: left;
   margin: 0 auto;
   margin-top: 20px;
-
 }
 
 p { 
@@ -26,6 +25,9 @@ p {
   margin: 10px 0;
 }
 
+.card {
+  padding: 10px;
+}
 
 .container {
   width: 100%;
@@ -52,7 +54,6 @@ h4 {
 }
 
 h5 { 
-  background-color: #e6f2ff;         /* Fundo azul suave */
   color: #4a4a4a;                    /* Cinza escuro */
   padding: 8px;
   border-radius: 10px;
@@ -91,7 +92,7 @@ label {
 }
 
 /* Botão em tom Violeta */
-button, .btn-violet {
+button, .btn-violeta {
   background-color: #8a52a5 !important; /* Violeta */
   font-weight: bold;
   color: #ffffff !important;
@@ -106,7 +107,7 @@ button:hover, .btn-violet:hover {
   background-color: #733f8c !important; /* Violeta um pouco mais escuro (hover) */
 }
 
-.btn-outline-violet {
+.btn-borda-violeta {
   background-color: transparent !important;
   color: #8a52a5 !important;
   border: 2px solid #8a52a5 !important;
@@ -116,21 +117,9 @@ button:hover, .btn-violet:hover {
   transition: all 0.2s ease;
 }
 
-.btn-outline-violet:hover {
+.btn-borda-violeta:hover {
   background-color: #8a52a5 !important;
   color: #ffffff !important;
-}
-
-a {
-  align-items: center;
-}
-
-/* Cor normal dos links do menu */
-nav a {
-  color: #555555;              /* Cinza suave */
-  text-decoration: none;     
-  font-weight: 500;
-  transition: color 0.2s ease;
 }
 
 /* Cor (hover) em tons de violeta */
@@ -138,12 +127,7 @@ nav a:hover {
   color: #8a52a5;              /* Violeta */
 }
 
-.btn-container {
-  display: flex;
-  justify-content: center; 
-  width: 100%;
-  margin-top: 20px;
-}
+
 
 /* IMAGENS PROJETOS */
 .card-img-top {
@@ -152,13 +136,14 @@ nav a:hover {
   object-position: center;
 }
 
-footer {
-  text-align: center;
-}
-
 footer p {
   text-align: center;
   width: auto;
+  background-color: aliceblue;
+}
+
+footer {
+  background-color: aliceblue;
 }
 
 /* media para min 1000px */
