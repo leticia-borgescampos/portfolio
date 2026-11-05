@@ -1,77 +1,176 @@
-:root {
-  --violet-main: #a78bfa;     /* Violeta claro principal para botões */
-  --violet-hover: #8b5cf6;    /* Tom ligeiramente mais escuro para o hover */
-  --violet-dark: #7c3aed;     /* Tom de violeta legível para textos e ícones */
-  --violet-soft: #f5f3ff;     /* Fundo violeta pastel muito suave */
-  --violet-border: #ddd6fe;   /* Borda delicada em lavanda */
-}
-
-/* Scroll Suave e Margem para o Menu Fixo */
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 60px;
-}
-
 body {
-  font-family: system-ui, -apple-system, sans-serif;
-  color: #334155;
+  background-color: #f4e6fc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: scroll;
+  line-height: normal;
+  width: 100%;
+  margin: 0;
+}
+
+/* Títulos */
+h1
+  color: #4a4a4a;                    /* Texto em cinza escuro */
+  padding: 8px;
+  border-radius: 10px;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+
+p { 
+  color: #555555;                    /* Parágrafos em cinza */
+  line-height: 18px;
+  text-align: left;
+  width: 100%;
+  margin: 10px 0;
+}
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+fieldset {
+  border: 2px solid #ecb7bf;
+  border-radius: 30px;
+  padding: 20px;
+  margin: 10px;
+  margin-left: 30px;
+  background-color: #ecb7bf;
+}
+
+h3 {
+  color: #4a4a4a;                    /* Cinza escuro */
+  text-align: center;
+}
+
+h4 {
+  color: #4a4a4a;                    /* Cinza escuro */
+  text-align: left;
+}
+
+h5 { 
+  background-color: #e6f2ff;         /* Fundo azul suave */
+  color: #4a4a4a;                    /* Cinza escuro */
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+tr {
+  border-color: lightpink;
+  color: #555555;                    /* Cinza em tabelas */
+}
+
+ul {
+  color: #555555;                    /* Cinza para listas */
+}
+
+ol {
+  color: #555555;                    /* Cinza para listas ordenadas */
+}
+
+form {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  padding: 20px;
+  margin: 10px;
   background-color: #ffffff;
 }
 
-/* Cores e Fundos */
-.bg-violet-soft { background-color: var(--violet-soft) !important; }
-.text-violet-brand { color: var(--violet-dark) !important; }
-.border-violet { border-color: var(--violet-main) !important; }
-
-/* Secção Hero */
-.hero-section {
-  min-height: 75vh;
-  padding-top: 80px;
+label {
+  color: #4a4a4a;                    /* Cinza escuro para rótulos */
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.profile-img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-}
-
-/* Botões Customizados em Violeta Claro */
-.btn-violet {
-  background-color: var(--violet-main);
-  color: #ffffff;
+/* Botão em tom Violeta */
+button, .btn-violet {
+  background-color: #8a52a5 !important; /* Violeta */
+  font-weight: bold;
+  color: #ffffff !important;
   border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.btn-violet:hover {
-  background-color: var(--violet-hover);
-  color: #ffffff;
+button:hover, .btn-violet:hover {
+  background-color: #733f8c !important; /* Violeta um pouco mais escuro (hover) */
 }
 
 .btn-outline-violet {
-  border: 1px solid var(--violet-main);
-  color: var(--violet-dark);
-  background-color: transparent;
+  background-color: transparent !important;
+  color: #8a52a5 !important;
+  border: 2px solid #8a52a5 !important;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px 18px;
+  transition: all 0.2s ease;
 }
 
 .btn-outline-violet:hover {
-  background-color: var(--violet-main);
-  color: #ffffff;
+  background-color: #8a52a5 !important;
+  color: #ffffff !important;
 }
 
-/* Badges / Etiquetas */
-.badge-violet {
-  background-color: var(--violet-border);
-  color: #5b21b6;
+a {
+  align-items: center;
 }
 
-/* Imagens dos Cards de Projetos */
+/* Cor normal dos links do menu */
+nav a {
+  color: #555555;              /* Cinza suave */
+  text-decoration: none;     
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Cor (hover) em tons de violeta */
+nav a:hover {
+  color: #8a52a5;              /* Violeta */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center; 
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* IMAGENS PROJETOS */
 .card-img-top {
-  height: 180px;
+  height: 200px;
   object-fit: cover;
+  object-position: center;
 }
 
-/* Foco em Elementos de Formulário */
-.form-control:focus {
-  border-color: var(--violet-main);
-  box-shadow: 0 0 0 0.2rem rgba(167, 139, 250, 0.25);
+footer {
+  text-align: center;
+}
+
+footer p {
+  text-align: center;
+  width: auto;
+}
+
+/* media para min 1000px */
+@media (min-width: 1000px) {
+  #container {
+    flex-direction: column;
+  }
+}
+
+/* media para min 500px */
+@media (min-width: 500px) {
+  #container {
+    flex-direction: row;
+  }
 }
