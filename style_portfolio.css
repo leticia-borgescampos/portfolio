@@ -1,118 +1,44 @@
 body {
   background-color: #f4e6fc;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  overflow: scroll;
-  line-height: normal;
-  width: 100%;
+  line-height: 1.5;
   margin: 0;
+  color: #555555;
 }
 
-/* Títulos */
-h1 {
-  color: #4a4a4a;                    /* Texto em cinza escuro */
-  padding: 8px;
-  border-radius: 10px;
-  text-align: left;
-  margin: 0 auto;
-  margin-top: 20px;
+/* Títulos gerais */
+h1, h2, h3, h4 {
+  color: #4a4a4a;
 }
 
-p { 
-  color: #555555;                    /* Parágrafos em cinza */
-  line-height: 18px;
-  text-align: left;
-  width: 100%;
-  margin: 10px 0;
-}
-
+/* Estilo global dos cards */
 .card {
-  padding: 10px;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-fieldset {
-  border: 2px solid #ecb7bf;
-  border-radius: 30px;
-  padding: 20px;
-  margin: 10px;
-  margin-left: 30px;
-  background-color: #ecb7bf;
-}
-
-h3 {
-  color: #4a4a4a;                    /* Cinza escuro */
-  text-align: center;
-}
-
-h4 {
-  color: #4a4a4a;                    /* Cinza escuro */
-  text-align: left;
-}
-
-h5 { 
-  color: #4a4a4a;                    /* Cinza escuro */
-  padding: 8px;
-  border-radius: 10px;
-  text-align: center;
-  width: fit-content;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-tr {
-  border-color: lightpink;
-  color: #555555;                    /* Cinza em tabelas */
-}
-
-ul {
-  color: #555555;                    /* Cinza para listas */
-}
-
-ol {
-  color: #555555;                    /* Cinza para listas ordenadas */
-}
-
-form {
-  display: flex; 
-  flex-direction: column;
-  justify-content: center; 
-  padding: 20px;
-  margin: 10px;
+  border: 1px solid rgba(138, 82, 165, 0.15);
   background-color: #ffffff;
 }
 
-label {
-  color: #4a4a4a;                    /* Cinza escuro para rótulos */
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Botão em tom Violeta */
-button, .btn-violeta {
-  background-color: #8a52a5 !important; /* Violeta */
-  font-weight: bold;
+/* Cores e Botões Personalizados */
+.bg-violet-brand, .btn-violeta {
+  background-color: #8a52a5 !important;
   color: #ffffff !important;
+  font-weight: 600;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   padding: 10px 20px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
-button:hover, .btn-violet:hover {
-  background-color: #733f8c !important; /* Violeta um pouco mais escuro (hover) */
+.btn-violeta:hover {
+  background-color: #733f8c !important;
 }
 
 .btn-borda-violeta {
   background-color: transparent !important;
   color: #8a52a5 !important;
   border: 2px solid #8a52a5 !important;
-  font-weight: bold;
-  border-radius: 5px;
+  font-weight: 600;
+  border-radius: 8px;
   padding: 8px 18px;
   transition: all 0.2s ease;
 }
@@ -122,40 +48,32 @@ button:hover, .btn-violet:hover {
   color: #ffffff !important;
 }
 
-/* Cor (hover) em tons de violeta */
-nav a:hover {
-  color: #8a52a5;              /* Violeta */
+/* Comportamento da Navbar e Links */
+nav a.nav-link {
+  color: #4a4a4a !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
 }
 
+nav a.nav-link:hover {
+  color: #8a52a5 !important;
+}
 
-
-/* IMAGENS PROJETOS */
+/* Imagens dos Projetos */
 .card-img-top {
   height: 200px;
   object-fit: cover;
   object-position: center;
 }
 
-footer p {
-  text-align: center;
-  width: auto;
-  background-color: aliceblue;
+/* Inputs do Formulário */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  padding: 12px;
 }
 
-footer {
-  background-color: aliceblue;
-}
-
-/* media para min 1000px */
-@media (min-width: 1000px) {
-  #container {
-    flex-direction: column;
-  }
-}
-
-/* media para min 500px */
-@media (min-width: 500px) {
-  #container {
-    flex-direction: row;
-  }
+.form-control:focus {
+  border-color: #8a52a5;
+  box-shadow: 0 0 0 0.25rem rgba(138, 82, 165, 0.25);
 }
